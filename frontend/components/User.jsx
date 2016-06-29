@@ -46,9 +46,14 @@ var User = React.createClass({
   },
 
   render: function () {
+    if (!this.state.current_user) {
+      var name = "Guest! Login or create an account to start tracking your games!"
+    } else {
+      var name = this.state.current_user.username + "!"
+    }
     return (
       <div>
-        <div>Hello {this.state.current_user.username}</div>
+        <div>Hello {name}</div>
         <Games currentUser={this.state.current_user} className="games-container"/>
       </div>
     );

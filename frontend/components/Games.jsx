@@ -2,6 +2,7 @@ var React = require('react'),
     ReactRouter = require('react-router'),
     LinkedStateMixin = require('react-addons-linked-state-mixin'),
     GameStore = require('../stores/games'),
+    UserStore = require('../stores/users'),
     History = require('react-router').History,
     GameDetails = require('./GameDetails'),
     ApiGameUtil = require('../util/api_game_util');
@@ -35,7 +36,7 @@ var Games = React.createClass({
     var current_user_id = parseInt(this.props.currentUser.id);
     return ({
       games: GameStore.allMyGames(current_user_id),
-      user1: current_user_id
+      user1: current_user_id,
     })
   },
 
@@ -56,12 +57,47 @@ var Games = React.createClass({
     this.setState(this.getStateFromStore());
   },
 
+  search: function (input) {
+    string = input.split(" ");
+    var users = UserStore.all();
+    var results = [];
+    for (var userIdx = 0; userIdx < users.length; userIdx++) {
+      if (users[userIdx].username === input) {
+        return results = [users[userIdx]];
+      } else {
+        var name = users[userIdx].username.split(" ");
+        for (var i = 0; i < name.length; i++) {
+          for (var j = 0; j < string.length; j++) {
+            if (name[i].toLowerCase() === string[j].toLowerCase()) {
+              results.push(users[userIdx]);
+            }
+          }
+        }
+      }
+    }
+    return results;
+  },
+
   handleGameSubmit: function(event){
     event.preventDefault();
-    var game = {user1: this.props.currentUser.id, user2: parseInt(this.state.user2), winner: parseInt(this.state.winner), comments: this.state.comments}
-    // this.state.games.push(game);
-    ApiGameUtil.createGame(game);
-    // this.setState(this.blankInt);
+    results = this.search(this.state.user2);
+
+    if (results.length > 1) {
+      var list = ""
+      for (var i = 0; i < results.length; i++) {
+        list += results[i].username + "\n";
+      }
+      alert("More than one users with that name found:\n" + list);
+
+    } else if (results.length === 0) {
+      alert("No users found with that name.");
+
+    } else {
+      user2 = results[0].id;
+      var game = {user1: this.props.currentUser.id, user2: parseInt(user2), winner: parseInt(this.state.winner), comments: this.state.comments}
+      ApiGameUtil.createGame(game);
+      this.setState(this.blankInt);
+    }
   },
 
   removeGame: function(event){
@@ -99,9 +135,14 @@ var Games = React.createClass({
       }.bind(this))
 
       if (this.state.gameDetails) {
-        var detailsClassName = "game-details";
+        var gameShow =
+          <div>
+            <GameDetails key={this.state.gameDetails} gameId={this.state.gameDetails} currentUserId={this.state.user1}/>
+            <button onClick={this.unshowGame}>Close</button>
+          </div>
+        ;
       } else {
-        var detailsClassName = "game-details-hidden";
+        var gameShow = <div></div>;
       }
 
       var winner = this.radioGroup("winner");
@@ -114,10 +155,7 @@ var Games = React.createClass({
             {gamesContainer}
           </ul>
 
-          <div className={detailsClassName}>
-            <GameDetails key={this.state.gameDetails} gameId={this.state.gameDetails} currentUserId={this.state.user1}/>
-            <button onClick={this.unshowGame}>Close</button>
-          </div>
+          {gameShow}
 
           <h3>Enter a new game</h3>
           <form onSubmit={this.handleGameSubmit}>

@@ -57,12 +57,6 @@ var GameDetails = React.createClass({
     this.userListener.remove();
   },
 
-  showDetail: function (event) {
-    var current_user = UserStore.find(parseInt(this.state.current_user_id));
-    var user = UserStore.find(parseInt(event.target.id));
-    this.history.pushState(current_user, '/user/' + user.id)
-  },
-
   render: function () {
     if (!this.state.gameId) {
       return (<div></div>)
@@ -80,12 +74,10 @@ var GameDetails = React.createClass({
       }
       var time = GameStore.dateToString(this.state.created_at);
       return (
-        <div>
-          <div className="game-container">
-            <h4>{this.state.user1.username} vs. {this.state.user2.username}:</h4>
-            <div className="game-winner">Winner: {winner}</div>
-            <div className="game-comments">Comments: {this.state.comments}</div><br/>
-          </div>
+        <div className="game-container">
+          <h4>{this.state.user1.username} vs. {this.state.user2.username}:</h4>
+          <div className="game-winner">Winner: {winner}</div>
+          <div className="game-comments">Comments: {this.state.comments}</div><br/>
         </div>
       );
     }
