@@ -1,0 +1,20 @@
+<div class="splash-body">
+
+  <div class="errors">
+    <%= flash[:errors_login].join("<br>").html_safe if flash[:errors_login] %>
+    <br/>
+  </div>
+  <h2 class="new-session">Log In</h2>
+  <br>
+  <form class="new-session" action="<%= session_url %>" method="post">
+    <%= auth_token_input %>
+    <input type="text" name="user[username]" placeholder="Username">
+    <br>
+    <input type="password" name="user[password]" placeholder="Password">
+    <br><br>
+    <input type="submit" value="Log In">
+  </form>
+
+  <a class="new-session" href=" <%= new_user_url %> ">Not a user? Sign up</a>
+
+</div>

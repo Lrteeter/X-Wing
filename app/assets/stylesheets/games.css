@@ -1,0 +1,10 @@
+
+.game-details-hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.game-details {
+  visibility: visible;
+  display: block;
+}

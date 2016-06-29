@@ -1,0 +1,247 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-radio-group' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json xwing@0.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'react-radio-group', null ]
+7 verbose cache add name=undefined spec="react-radio-group" args=["react-radio-group",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'react-radio-group',
+8 verbose parsed url   path: 'react-radio-group',
+8 verbose parsed url   href: 'react-radio-group' }
+9 silly lockFile 80842478-react-radio-group react-radio-group
+10 verbose lock react-radio-group /home/lrteeter/.npm/80842478-react-radio-group.lock
+11 silly lockFile 80842478-react-radio-group react-radio-group
+12 silly lockFile 80842478-react-radio-group react-radio-group
+13 verbose addNamed [ 'react-radio-group', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 59619207-react-radio-group react-radio-group@
+16 verbose lock react-radio-group@ /home/lrteeter/.npm/59619207-react-radio-group.lock
+17 silly addNameRange { name: 'react-radio-group', range: '*', hasData: false }
+18 verbose url raw react-radio-group
+19 verbose url resolving [ 'https://registry.npmjs.org/', './react-radio-group' ]
+20 verbose url resolved https://registry.npmjs.org/react-radio-group
+21 info trying registry request attempt 1 at 18:37:22
+22 http GET https://registry.npmjs.org/react-radio-group
+23 http 200 https://registry.npmjs.org/react-radio-group
+24 silly registry.get cb [ 200,
+24 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     etag: '"56JZV1IUMKK2L09DGGZZXFZ9L"',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=300',
+24 silly registry.get     'content-length': '14469',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     date: 'Wed, 29 Jun 2016 01:37:23 GMT',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     connection: 'keep-alive',
+24 silly registry.get     'x-served-by': 'cache-ord1740-ORD',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1467164243.009060,VS0,VE161',
+24 silly registry.get     vary: 'Accept-Encoding' } ]
+25 silly addNameRange number 2 { name: 'react-radio-group', range: '*', hasData: true }
+26 silly addNameRange versions [ 'react-radio-group',
+26 silly addNameRange   [ '1.0.0',
+26 silly addNameRange     '1.1.0',
+26 silly addNameRange     '2.0.0',
+26 silly addNameRange     '2.0.1',
+26 silly addNameRange     '2.0.2',
+26 silly addNameRange     '2.1.0',
+26 silly addNameRange     '2.1.1',
+26 silly addNameRange     '2.2.0' ] ]
+27 verbose addNamed [ 'react-radio-group', '2.2.0' ]
+28 verbose addNamed [ '2.2.0', '2.2.0' ]
+29 silly lockFile 9b6a5762-react-radio-group-2-2-0 react-radio-group@2.2.0
+30 verbose lock react-radio-group@2.2.0 /home/lrteeter/.npm/9b6a5762-react-radio-group-2-2-0.lock
+31 silly lockFile d6fac110-roup-react-radio-group-2-2-0-tgz https://registry.npmjs.org/react-radio-group/-/react-radio-group-2.2.0.tgz
+32 verbose lock https://registry.npmjs.org/react-radio-group/-/react-radio-group-2.2.0.tgz /home/lrteeter/.npm/d6fac110-roup-react-radio-group-2-2-0-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-radio-group/-/react-radio-group-2.2.0.tgz',
+33 verbose addRemoteTarball   '6683a37b82eb77e48877486b0f9e8d2731af99be' ]
+34 info retry fetch attempt 1 at 18:37:23
+35 verbose fetch to= /home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/tmp.tgz
+36 http GET https://registry.npmjs.org/react-radio-group/-/react-radio-group-2.2.0.tgz
+37 http 200 https://registry.npmjs.org/react-radio-group/-/react-radio-group-2.2.0.tgz
+38 verbose tar unpack /home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/tmp.tgz
+39 silly lockFile 3d100f53-43272-0-5183773355092853-package tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package
+40 verbose lock tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package /home/lrteeter/.npm/3d100f53-43272-0-5183773355092853-package.lock
+41 silly lockFile 18584424-43272-0-5183773355092853-tmp-tgz tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/tmp.tgz
+42 verbose lock tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/tmp.tgz /home/lrteeter/.npm/18584424-43272-0-5183773355092853-tmp-tgz.lock
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 silly gunzTarPerm extractEntry package.json
+45 silly gunzTarPerm extractEntry .npmignore
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm extractEntry LICENSE
+48 silly gunzTarPerm extractEntry webpack.config.js
+49 silly gunzTarPerm extractEntry index.js
+50 silly gunzTarPerm extractEntry .idea/.name
+51 silly gunzTarPerm extractEntry .idea/dictionaries/nkbt.xml
+52 silly gunzTarPerm extractEntry .idea/encodings.xml
+53 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+54 silly gunzTarPerm extractEntry .idea/libraries/react_radio_group_node_modules.xml
+55 silly gunzTarPerm extractEntry .idea/misc.xml
+56 silly gunzTarPerm extractEntry .idea/modules.xml
+57 silly gunzTarPerm extractEntry .idea/react-radio-group.iml
+58 silly gunzTarPerm extractEntry .idea/vcs.xml
+59 silly gunzTarPerm extractEntry .idea/workspace.xml
+60 silly gunzTarPerm extractEntry lib/index.js
+61 silly gunzTarPerm extractEntry HISTORY.md
+62 silly lockFile 3d100f53-43272-0-5183773355092853-package tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package
+63 silly lockFile 3d100f53-43272-0-5183773355092853-package tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package
+64 silly lockFile 18584424-43272-0-5183773355092853-tmp-tgz tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/tmp.tgz
+65 silly lockFile 18584424-43272-0-5183773355092853-tmp-tgz tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/tmp.tgz
+66 verbose tar pack [ '/home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz',
+66 verbose tar pack   '/home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package' ]
+67 verbose tarball /home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+68 verbose folder /home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package
+69 silly lockFile 3d100f53-43272-0-5183773355092853-package tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package
+70 verbose lock tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package /home/lrteeter/.npm/3d100f53-43272-0-5183773355092853-package.lock
+71 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+72 verbose lock tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz /home/lrteeter/.npm/c8fa967e-ct-radio-group-2-2-0-package-tgz.lock
+73 silly lockFile 3d100f53-43272-0-5183773355092853-package tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package
+74 silly lockFile 3d100f53-43272-0-5183773355092853-package tar:///home/lrteeter/tmp/npm-7038-x4P5xzUt/1467164243272-0.5183773355092853/package
+75 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+76 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+77 silly lockFile 3890ff88--react-radio-group-2-2-0-package /home/lrteeter/.npm/react-radio-group/2.2.0/package
+78 verbose lock /home/lrteeter/.npm/react-radio-group/2.2.0/package /home/lrteeter/.npm/3890ff88--react-radio-group-2-2-0-package.lock
+79 silly lockFile 3890ff88--react-radio-group-2-2-0-package /home/lrteeter/.npm/react-radio-group/2.2.0/package
+80 silly lockFile 3890ff88--react-radio-group-2-2-0-package /home/lrteeter/.npm/react-radio-group/2.2.0/package
+81 verbose tar unpack /home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+82 silly lockFile d5d3f364--react-radio-group-2-2-0-package tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package
+83 verbose lock tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package /home/lrteeter/.npm/d5d3f364--react-radio-group-2-2-0-package.lock
+84 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+85 verbose lock tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz /home/lrteeter/.npm/c8fa967e-ct-radio-group-2-2-0-package-tgz.lock
+86 silly gunzTarPerm modes [ '755', '644' ]
+87 silly gunzTarPerm extractEntry package.json
+88 silly gunzTarPerm extractEntry .npmignore
+89 silly gunzTarPerm extractEntry README.md
+90 silly gunzTarPerm extractEntry LICENSE
+91 silly gunzTarPerm extractEntry index.js
+92 silly gunzTarPerm extractEntry webpack.config.js
+93 silly gunzTarPerm extractEntry .idea/.name
+94 silly gunzTarPerm extractEntry .idea/dictionaries/nkbt.xml
+95 silly gunzTarPerm extractEntry .idea/encodings.xml
+96 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+97 silly gunzTarPerm extractEntry .idea/libraries/react_radio_group_node_modules.xml
+98 silly gunzTarPerm extractEntry .idea/misc.xml
+99 silly gunzTarPerm extractEntry .idea/modules.xml
+100 silly gunzTarPerm extractEntry .idea/react-radio-group.iml
+101 silly gunzTarPerm extractEntry .idea/vcs.xml
+102 silly gunzTarPerm extractEntry .idea/workspace.xml
+103 silly gunzTarPerm extractEntry HISTORY.md
+104 silly gunzTarPerm extractEntry lib/index.js
+105 silly lockFile d5d3f364--react-radio-group-2-2-0-package tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package
+106 silly lockFile d5d3f364--react-radio-group-2-2-0-package tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package
+107 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+108 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+109 verbose chmod /home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz 644
+110 verbose chown /home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz [ 1000, 1000 ]
+111 silly lockFile d6fac110-roup-react-radio-group-2-2-0-tgz https://registry.npmjs.org/react-radio-group/-/react-radio-group-2.2.0.tgz
+112 silly lockFile d6fac110-roup-react-radio-group-2-2-0-tgz https://registry.npmjs.org/react-radio-group/-/react-radio-group-2.2.0.tgz
+113 silly lockFile 9b6a5762-react-radio-group-2-2-0 react-radio-group@2.2.0
+114 silly lockFile 9b6a5762-react-radio-group-2-2-0 react-radio-group@2.2.0
+115 silly lockFile 59619207-react-radio-group react-radio-group@
+116 silly lockFile 59619207-react-radio-group react-radio-group@
+117 silly resolved [ { name: 'react-radio-group',
+117 silly resolved     version: '2.2.0',
+117 silly resolved     description: 'Better radio buttons.',
+117 silly resolved     main: 'index.js',
+117 silly resolved     scripts:
+117 silly resolved      { example: 'webpack -w -d',
+117 silly resolved        build: 'babel index.jsx --out-dir=lib --modules umd --module-id RadioGroup',
+117 silly resolved        prerelease: 'npm run build' },
+117 silly resolved     repository:
+117 silly resolved      { type: 'git',
+117 silly resolved        url: 'https://github.com/chenglou/react-radio-group.git' },
+117 silly resolved     keywords:
+117 silly resolved      [ 'facebook',
+117 silly resolved        'react',
+117 silly resolved        'radio',
+117 silly resolved        'radio-group',
+117 silly resolved        'component',
+117 silly resolved        'react-component' ],
+117 silly resolved     devDependencies:
+117 silly resolved      { babel: '^5.5.8',
+117 silly resolved        'babel-core': '^5.2.17',
+117 silly resolved        'babel-loader': '^5.0.0',
+117 silly resolved        webpack: '^1.8.11' },
+117 silly resolved     author: { name: 'chenglou', email: 'chenglou92@gmail.com' },
+117 silly resolved     contributors: [ [Object] ],
+117 silly resolved     license: 'MIT',
+117 silly resolved     bugs: { url: 'https://github.com/chenglou/react-radio-group/issues' },
+117 silly resolved     homepage: 'https://github.com/chenglou/react-radio-group',
+117 silly resolved     peerDependencies: { react: '>=0.13.0' },
+117 silly resolved     readme: '# [React](http://facebook.github.io/react/)-radio-group\n\n```\nnpm install react-radio-group\n```\n\nThen either `require(\'react-radio-group\')` or add `node_modules/react-radio-group/lib/index.js` into your HTML file (exports the `RadioGroup` global).\n\n## What This Solves\nThis is your average radio buttons group:\n\n```js\n<form>\n  <input type="radio" name="fruit" value="apple" />Apple\n  <input type="radio" name="fruit" value="orange" />Orange\n  <input type="radio" name="fruit" value="watermelon" />Watermelon\n</form>\n```\n\nA few problems:\n- Repetitive fields (`name`, `type`, `checked`, `onChange`).\n- Hard to set the checked value. You need to put e.g. `checked={\'apple\' === this.state.selectedFruitName}` on every input.\n- Hard to retrieve the selected value.\n\nHere\'s a better version (full example [here](https://github.com/chenglou/react-radio-group/blob/5019ce724e4bb8c9aca35c11c20f7800995c2bcb/example/example.jsx))\n\n```js\n<RadioGroup name="fruit" selectedValue={this.state.selectedValue} onChange={this.handleChange}>\n  {Radio => (\n    <div>\n      <Radio value="apple" />Apple\n      <Radio value="orange" />Orange\n      <Radio value="watermelon" />Watermelon\n    </div>\n  )}\n</RadioGroup>\n```\n\nRepetitive fields are either lifted onto the `RadioGroup` wrapper or already implicitly set on the `Radio` component, which is a simple wrapper around the radio `input`.\n\n## Formal API\n#### &lt;RadioGroup />\nExposes [4 optional props](https://github.com/chenglou/react-radio-group/blob/7a9b0fb4c82dd70d09e01ca6dcc64a1194d7219d/index.jsx#L23-L26):\n- `name: String`: what you\'d normally put on the radio inputs themselves.\n- `selectedValue: String | Number | Boolean`: the currently selected value. This will be used to compare against the values on the `Radio` components to select the right one.\n- `onChange: Function`: will be passed the newly selected value.\n- `children: Function`: will be passed a `Radio` component (a thin wrapper around `input`) some fields like `type`, `name` and `checked` already set.\n\n#### &lt;Radio />\n(Since you\'re getting that as the argument of your children function, you could have named it anything you wanted really.) Any prop you pass onto it will be transferred to the actual `input` under the hood.\n\n## License\n\n[MIT](./LICENSE)\n',
+117 silly resolved     readmeFilename: 'README.md',
+117 silly resolved     _id: 'react-radio-group@2.2.0',
+117 silly resolved     dist: { shasum: '6735eed1d83da01b73140bde88ab6288516b6ced' },
+117 silly resolved     _from: 'react-radio-group@',
+117 silly resolved     _resolved: 'https://registry.npmjs.org/react-radio-group/-/react-radio-group-2.2.0.tgz' } ]
+118 info install react-radio-group@2.2.0 into /home/lrteeter/Documents/xwing
+119 info installOne react-radio-group@2.2.0
+120 info /home/lrteeter/Documents/xwing/node_modules/react-radio-group unbuild
+121 verbose tar unpack /home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+122 silly lockFile 51e82fa5-g-node-modules-react-radio-group tar:///home/lrteeter/Documents/xwing/node_modules/react-radio-group
+123 verbose lock tar:///home/lrteeter/Documents/xwing/node_modules/react-radio-group /home/lrteeter/.npm/51e82fa5-g-node-modules-react-radio-group.lock
+124 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+125 verbose lock tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz /home/lrteeter/.npm/c8fa967e-ct-radio-group-2-2-0-package-tgz.lock
+126 silly gunzTarPerm modes [ '755', '644' ]
+127 silly gunzTarPerm extractEntry package.json
+128 silly gunzTarPerm extractEntry .npmignore
+129 silly gunzTarPerm extractEntry README.md
+130 silly gunzTarPerm extractEntry LICENSE
+131 silly gunzTarPerm extractEntry index.js
+132 silly gunzTarPerm extractEntry webpack.config.js
+133 silly gunzTarPerm extractEntry .idea/.name
+134 silly gunzTarPerm extractEntry .idea/dictionaries/nkbt.xml
+135 silly gunzTarPerm extractEntry .idea/encodings.xml
+136 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+137 silly gunzTarPerm extractEntry .idea/libraries/react_radio_group_node_modules.xml
+138 silly gunzTarPerm extractEntry .idea/misc.xml
+139 silly gunzTarPerm extractEntry .idea/modules.xml
+140 silly gunzTarPerm extractEntry .idea/react-radio-group.iml
+141 silly gunzTarPerm extractEntry .idea/vcs.xml
+142 silly gunzTarPerm extractEntry .idea/workspace.xml
+143 silly gunzTarPerm extractEntry HISTORY.md
+144 silly gunzTarPerm extractEntry lib/index.js
+145 silly lockFile 51e82fa5-g-node-modules-react-radio-group tar:///home/lrteeter/Documents/xwing/node_modules/react-radio-group
+146 silly lockFile 51e82fa5-g-node-modules-react-radio-group tar:///home/lrteeter/Documents/xwing/node_modules/react-radio-group
+147 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+148 silly lockFile c8fa967e-ct-radio-group-2-2-0-package-tgz tar:///home/lrteeter/.npm/react-radio-group/2.2.0/package.tgz
+149 info preinstall react-radio-group@2.2.0
+150 verbose readDependencies using package.json deps
+151 verbose readDependencies using package.json deps
+152 silly resolved []
+153 verbose about to build /home/lrteeter/Documents/xwing/node_modules/react-radio-group
+154 info build /home/lrteeter/Documents/xwing/node_modules/react-radio-group
+155 verbose linkStuff [ false,
+155 verbose linkStuff   false,
+155 verbose linkStuff   false,
+155 verbose linkStuff   '/home/lrteeter/Documents/xwing/node_modules' ]
+156 info linkStuff react-radio-group@2.2.0
+157 verbose linkBins react-radio-group@2.2.0
+158 verbose linkMans react-radio-group@2.2.0
+159 verbose rebuildBundles react-radio-group@2.2.0
+160 info install react-radio-group@2.2.0
+161 info postinstall react-radio-group@2.2.0
+162 error peerinvalid The package history does not satisfy its siblings' peerDependencies requirements!
+162 error peerinvalid Peer react-router@1.0.3 wants history@^1.17.0
+163 error System Linux 3.19.0-64-generic
+164 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "react-radio-group"
+165 error cwd /home/lrteeter/Documents/xwing
+166 error node -v v0.10.25
+167 error npm -v 1.3.10
+168 error code EPEERINVALID
+169 verbose exit [ 1, true ]
