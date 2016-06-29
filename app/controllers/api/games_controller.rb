@@ -9,6 +9,16 @@ class Api::GamesController < ApplicationController
     render :index
   end
 
+  def edit
+    render :show
+  end
+
+  def update
+    @game = Game.find(params[:id])
+    @game.update_attributes(game_params)
+    render :update
+  end
+
   def destroy
     @game = Game.find(params[:id])
     @game.destroy
@@ -18,6 +28,6 @@ class Api::GamesController < ApplicationController
   private
 
   def game_params
-    params.require(:game).permit(:user1, :user2, :winner, :comments)
+    params.require(:game).permit(:user1, :user2, :winner, :comments1, :comments2)
   end
 end

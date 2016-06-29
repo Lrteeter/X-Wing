@@ -29,7 +29,7 @@ var Games = React.createClass({
 
   blankInt: {
     user2: "",
-    comments: ""
+    comments1: ""
   },
 
   getStateFromStore: function () {
@@ -57,7 +57,7 @@ var Games = React.createClass({
     this.setState(this.getStateFromStore());
   },
 
-  search: function (input) {
+  searchUsernames: function (input) {
     string = input.split(" ");
     var users = UserStore.all();
     var results = [];
@@ -80,7 +80,7 @@ var Games = React.createClass({
 
   handleGameSubmit: function(event){
     event.preventDefault();
-    results = this.search(this.state.user2);
+    results = this.searchUsernames(this.state.user2);
 
     if (results.length > 1) {
       var list = ""
@@ -94,7 +94,7 @@ var Games = React.createClass({
 
     } else {
       user2 = results[0].id;
-      var game = {user1: this.props.currentUser.id, user2: parseInt(user2), winner: parseInt(this.state.winner), comments: this.state.comments}
+      var game = {user1: this.props.currentUser.id, user2: parseInt(user2), winner: parseInt(this.state.winner), comments1: this.state.comments1, comments2: ""}
       ApiGameUtil.createGame(game);
       this.setState(this.blankInt);
     }
@@ -170,7 +170,7 @@ var Games = React.createClass({
             <label>No</label>
             <br/>
             <label>Comments : </label>
-            <textarea cols="40" rows="5" valueLink={this.linkState("comments")}></textarea>
+            <textarea cols="40" rows="5" valueLink={this.linkState("comments1")}></textarea>
             <input className="new-game-button" type="submit" value="Add Game"/>
           </form>
         </div>
